@@ -5,7 +5,7 @@ export type SlideType =
   | 'chart' 
   | 'image' 
   | 'twocolumn' 
-  | 'conclusion'
+  | 'conclusion' 
   | 'roadmap';
 
 export type Language = 'ja' | 'ru';
@@ -21,11 +21,4 @@ export interface SlideContent {
   leftContent?: string[];
   rightContent?: string[];
   columns?: { title: string; items: string[] }[];
-}
-
-export interface BusinessIdea {
-  title: string;
-  target: string;
-  monetization: string;
-  scalability: string;
 }
